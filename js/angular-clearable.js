@@ -48,8 +48,8 @@ angular.module('xngClearable', []).
                             var text = angular.element(iElement.children()[0]);
 
                             btn.bind('mousedown', function(e) {
+                                text.focus();
                                 text.val('');
-                                text.triggerHandler('input');
                                 e.preventDefault();
                             });
 
